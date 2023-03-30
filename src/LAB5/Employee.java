@@ -1,4 +1,4 @@
-package LAB4;
+package LAB5;
 
 import java.util.Scanner;
 
@@ -26,23 +26,20 @@ public class Employee {
     }
 
     public static void main(String[] args) {
-        Employee e1 = new Employee();
-        e1.empName = "Victor";
-        e1.empCode = 2048;
-        e1.empSal = 10000;
+        Employee[] employees = new Employee[5];
+        int i;
+        for (i = 0; i < 5; i++) {
+            System.out.println("\nEmployee " + (i + 1));
+            Employee emp = new Employee();
+            emp.getData();
+            employees[i] = emp;
+        }
 
-        System.out.println("Employee 1");
-        e1.printData();
-        System.out.println();
-
-        Employee e2 = new Employee();
-        e2.empName = "Emmanuel";
-        e2.empCode = 1024;
-        e2.empSal = 15000;
-
-        System.out.println("Employee 2");
-        e2.printData();
-        System.out.println();
-        //
+        for (Employee emp : employees) {
+            if (emp.empSal > 25000) {
+                System.out.println("\nEmployee with salary > 25000");
+                emp.printData();
+            }
+        }
     }
 }

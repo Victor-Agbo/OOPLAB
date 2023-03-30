@@ -35,6 +35,8 @@ public class Student {
             students[i] = std;
         }
         i = 1;
+        
+        //Ask 
         for (Student student : students) {
             System.out.println("\nStudent " + i + " details");
             student.printData();
