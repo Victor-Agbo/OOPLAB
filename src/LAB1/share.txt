@@ -1,0 +1,83 @@
+package LAB1;
+
+public class Proj1a {
+    public static void main(String[] args) {
+        System.out.println("HELLO WORLD!");
+    }
+}
+
+
+package LAB1;
+
+public class Proj1b {
+    public static void main(String [] args) {
+        System.out.println("Marwadi University, Rajkot-Morbi Highway, Gauridad, Rajkot, Gujarat.");
+    }
+}
+
+
+package LAB1;
+
+public class Proj1c {
+    public static void main(String[] args) {
+        System.out.println("Marwadi University, ");
+        System.out.println("Rajkot-Morbi Highway, ");
+        System.out.println("Gauridad, Rajkot, ");
+        System.out.println("Gujarat.");
+    }
+}
+
+
+package LAB1;
+
+public class Proj1d {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 15;
+
+        System.out.println("Before swap a = " + a + ", b = " + b);
+
+        int tmp = a;
+        a = b;
+        b = tmp;
+
+        System.out.println("After swap a = " + a + ", b = " + b);
+    }
+}
+
+
+package LAB1;
+
+import java.util.Scanner;
+
+public class Proj2e {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("What operation (+,-): ");
+        String op = sc.next();
+
+        op = op.toLowerCase();
+
+        if (op.equals("+")) {
+            System.out.print("Enter Number: ");
+            Double num = sc.nextDouble();
+
+            System.out.print("Enter second Number: ");
+            Double num2 = sc.nextDouble();
+
+            System.out.println("The sum of " + num + " and " + num2 + " is " + (num + num2));
+        }
+
+        else if (op.equals("-")) {
+            System.out.print("Enter Number: ");
+            Double num = sc.nextDouble();
+
+            System.out.print("Enter second Number: ");
+            Double num2 = sc.nextDouble();
+
+            System.out.println("The difference between " + num + " and " + num2 + " is " + (num - num2));
+        }
+
+        sc.close();
+    }
+}
