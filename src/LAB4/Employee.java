@@ -1,5 +1,4 @@
 package LAB4;
-
 import java.util.Scanner;
 
 public class Employee {
@@ -16,33 +15,28 @@ public class Employee {
         empCode = sc.nextInt();
         System.out.print("Salary: ");
         empSal = sc.nextInt();
+        System.out.println();
     }
 
     void printData() {
         System.out.println("Employee name: " + empName);
         System.out.println("Employee code: " + empCode);
         System.out.println("Employee salary: " + empSal + " rupees");
-
     }
 
     public static void main(String[] args) {
         Employee e1 = new Employee();
-        e1.empName = "Victor";
-        e1.empCode = 2048;
-        e1.empSal = 10000;
+        e1.getData();
+
+        Employee e2 = new Employee();
+        e2.getData();
 
         System.out.println("Employee 1");
         e1.printData();
         System.out.println();
 
-        Employee e2 = new Employee();
-        e2.empName = "Emmanuel";
-        e2.empCode = 1024;
-        e2.empSal = 15000;
-
         System.out.println("Employee 2");
         e2.printData();
         System.out.println();
-        //
     }
 }

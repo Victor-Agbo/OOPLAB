@@ -1,5 +1,4 @@
 package LAB5;
-
 import java.util.Scanner;
 
 public class Student {
@@ -35,12 +34,14 @@ public class Student {
             students[i] = std;
         }
         i = 1;
-        
-        //Ask 
+
+        // Ask
         for (Student student : students) {
-            System.out.println("\nStudent " + i + " details");
-            student.printData();
-            i++;
+            if (student.age > 18) {
+                System.out.println("\nAge > 18");
+                student.printData();
+                i++;
+            }
         }
     }
 }

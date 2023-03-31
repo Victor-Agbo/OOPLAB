@@ -9,7 +9,6 @@ public class Student {
         System.out.println("Student name: " + name);
         System.out.println("Student city: " + city);
         System.out.println("Student age: " + age);
-
     }
 
     public static void main(String[] args) {
