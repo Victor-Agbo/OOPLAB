@@ -1,0 +1,40 @@
+package LAB6;
+
+public class Person {
+    private String name;
+    private int age;
+    private String address;
+
+    public Person(String name, int age, String address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+
+    protected void finalize() throws Throwable {
+        try {
+            System.out.println("Object has been destroyed!");
+        } catch (Throwable e) {
+            throw e;
+        } finally {
+            super.finalize();
+        }
+    }
+
+    public static void main(String[] args) throws Throwable {
+        Person p1 = new Person("Victor", 19, "15, Sanni street");
+        Person p2 = new Person("Emmanuel", 17, "Abuja");
+
+        p1.finalize();
+        p2.finalize();
+    }
+}
+
+// LAB 6
+// Write a java program that creates a class called Person which has the
+// following private instance variables:- name , age and address . The person
+// class should have a constructor that takes values for each of these variables
+// and sets them accordingly. The class should have a finalize() method that
+// prints the message to console indicating that the object has been destroyed.
+// The main() method should create two instances of the person class with
+// different values for the instance variables.
