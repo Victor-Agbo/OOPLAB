@@ -29,12 +29,3 @@ public class Person {
         p2.finalize();
     }
 }
-
-// LAB 6
-// Write a java program that creates a class called Person which has the
-// following private instance variables:- name , age and address . The person
-// class should have a constructor that takes values for each of these variables
-// and sets them accordingly. The class should have a finalize() method that
-// prints the message to console indicating that the object has been destroyed.
-// The main() method should create two instances of the person class with
-// different values for the instance variables.
