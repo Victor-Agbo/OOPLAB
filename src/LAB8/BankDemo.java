@@ -2,10 +2,16 @@ package LAB8;
 
 import java.util.Scanner;
 
-abstract class Bank {
-    protected int interest = 5;
+class Bank {
+    protected int interest;
+    Scanner sc;
 
-    abstract void getRateOfInterest();
+    void getRateOfInterest() {
+        System.out.print("Bank rate: ");
+        sc = new Scanner(System.in);
+
+        interest = sc.nextInt();
+    }
 }
 
 class SBI extends Bank {
