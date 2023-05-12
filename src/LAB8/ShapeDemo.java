@@ -9,7 +9,9 @@ abstract class Shape {
         this.y = y;
     }
 
-    public void move() {
+    public void move(int mx, int my) {
+        this.x += mx;
+        this.y += my;
         System.out.println("Shape moved!");
     }
 
