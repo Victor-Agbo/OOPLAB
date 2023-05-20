@@ -5,6 +5,7 @@ public class ExceptionDemo {
 
         try {
             int[] nums = new int[-1];
+            System.out.println(nums);
         } catch (NegativeArraySizeException e) {
             System.out.println("Exception: " + e);
         }
@@ -22,6 +23,7 @@ public class ExceptionDemo {
 
         try {
             int a = nums[2];
+            System.out.println(a);
         } catch (IndexOutOfBoundsException e) {
             System.out.println("Exception: "+e);
         }

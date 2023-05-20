@@ -1,12 +1,12 @@
 package LAB8;
 
-class Vehicle2 {
+class Vehicle {
     void drive() {
         System.out.println("Driving the vehicle!");
     }
 }
 
-class Car extends Vehicle2 {
+class Car extends Vehicle {
     void drive() {
         System.out.println("Driving the car!");
     }
