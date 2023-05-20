@@ -14,7 +14,7 @@ class Car extends Vehicle {
 
 public class CarDemo {
     public static void main(String[] args) {
-        Vehicle2 v1 = new Vehicle2();
+        Vehicle v1 = new Vehicle();
         v1.drive();
 
         Car c1 = new Car();
