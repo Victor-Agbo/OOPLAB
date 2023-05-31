@@ -15,10 +15,10 @@ class Rectangle implements Polygon {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Length: ");
-        breadth = sc.nextInt();
+        length = sc.nextInt();
 
         System.out.print("Breadth: ");
-        length = sc.nextInt();
+        breadth = sc.nextInt();
 
         System.out.print("Height: ");
         height = sc.nextInt();
@@ -26,7 +26,7 @@ class Rectangle implements Polygon {
         sc.close();
     }
 
-    void calculateArea() {
+    void calculateVolume() {
         System.out.println("Volume: " + (length * breadth * height));
     }
 }
@@ -35,5 +35,7 @@ public class CuboidDemo {
     public static void main(String[] args) {
         Rectangle r1 = new Rectangle();
         r1.getVolume();
+        r1.calculateVolume();
+
     }
 }

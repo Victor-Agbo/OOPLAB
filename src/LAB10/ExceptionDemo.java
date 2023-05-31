@@ -10,7 +10,6 @@ public class ExceptionDemo {
             System.out.println("Exception: " + e);
         }
 
-        int[] nums = new int[2];
         String ptr = null;
         try {
             if (ptr.equals("string"))
@@ -20,12 +19,13 @@ public class ExceptionDemo {
         } catch (NullPointerException e) {
             System.out.println("Exception: " + e);
         }
-
+        
+        int[] nums = new int[2];
         try {
             int a = nums[2];
             System.out.println(a);
         } catch (IndexOutOfBoundsException e) {
-            System.out.println("Exception: "+e);
+            System.out.println("Exception: " + e);
         }
     }
 }
